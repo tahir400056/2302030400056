@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration with Wearable Technology</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 2.5em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Image Gallery Styles */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between C:\Users\Metralvala tahir\OneDrive\Pictures\figma sceenshots */
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 30%; /* Adjust image width for 3 C:\Users\Metralvala tahir\OneDrive\Pictures\figma sceenshots in one line */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.02); /* Slightly enlarge the image on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+        }
+
+        /* View All Button Styles */
+        .view-all-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .view-all-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-all-button a:hover {
+            background-color: #555; /* Darker background on hover */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .company-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .company-section h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .company-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .company-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .company-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .company-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .features-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .features-section h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .features-section ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .features-section ul li {
+            margin: 10px 20px;
+        }
+
+        .features-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .features-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column; /* Stack navigation links vertically on smaller screens */
+                align-items: center;
+            }
+
+            .gallery img {
+                width: 100%; /* Make images stack vertically on smaller screens */
+            }
+
+            .company-section {
+                flex-direction: column; /* Stack company sections vertically on smaller screens */
+                align-items: center;
+                text-align: center;
+            }
+
+            .features-section ul {
+                flex-direction: column; /* Stack features vertically on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="challenges.html">Challenges</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="implementation.html">Implementation</a>
+            <a href="immersive-learning.html">Immersive Learning</a>
+            <a href="integration.html">Integration</a>
+            <a href="thank-you.html">Thank You</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Integration with Wearable Technology</h1>
+        <p>
+            Sync your fitness trackers and smartwatches with our AI health coach for real-time health monitoring, personalized insights, and goal tracking—empowering you to make smarter, data-driven wellness decisions effortlessly!
+        </p>
+        <div class="image-gallery">
+            <img src="C:\Users\Metralvala tahir\OneDrive\Pictures\figma sceenshots/figmai-5.1.png" alt="Fitness Tracker">
+            <img src="C:\Users\Metralvala tahir\OneDrive\Pictures\figma sceenshots/figmai-5.2.png" alt="Smartwatch">
+            <img src="C:\Users\Metralvala tahir\OneDrive\Pictures\figma sceenshots/figmai-5.3.png" alt="Health Insights">
+        </div>
+        <div class="view-all-button">
+            <a href="#">View All &gt;</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    < <footer>
+        <div class="company-section">
+            <div>
+                <h3>Our Company</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Market Research</h3>
+                <ul>
+                    <li><a href="#">Market Analysis</a></li>
+                    <li><a href="#">SEO Consultancy</a></li>
+                    <li><a href="#">Page Ranking</a></li>
+                    <li><a href="#">SMM</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Brand Strategy</h3>
+                <ul>
+                    <li><a href="#">Audience Analytics</a></li>
+                    <li><a href="#">Copywriting</a></li>
+                    <li><a href="#">Team Training</a></li>
+                    <li><a href="#">Email Marketing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="features-section">
+            <h3>Features</h3>
+            <ul>
+                <li><a href="#">Brand Strategy</a></li>
+                <li><a href="#">Audience Analytics</a></li>
+                <li><a href="#">Copywriting</a></li>
+                <li><a href="#">Team Training</a></li>
+            </ul>
+        </div>
+        <p>All Copyrights are reserved by Mamdouh Ghaneemy</p>
+    </footer>
+</body>
+</html>
